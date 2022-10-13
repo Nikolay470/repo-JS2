@@ -1,0 +1,86 @@
+.center {
+    padding-left: calc(50% - 550px);
+    padding-right: calc(50% - 550px);
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    border: 1px solid black;
+    width: 1100px;
+    height: 60px;
+    background: green;
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: flex-end;
+
+    .basket {
+        cursor: pointer;
+        padding: 11px;
+    }
+
+    .basketList {
+        width: 350px;
+        min-height: 100px;
+        border: 1px solid green;
+        background-color: beige;
+        z-index: 1000;
+        position: absolute;
+        top: 63px;
+
+        .goods {
+            border-bottom: 1px solid green;
+            position: relative;
+            padding-left: 15px;
+
+            p {
+                font-size: 18px;
+            }
+
+            .total {
+                margin-bottom: 0;
+            }
+
+            .btnRemoveProduct {
+                background-image: url(indexImg/btnBasket.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 50px;
+                height: 50px;
+                position: absolute;
+                top: 34px;
+                right: 20px;
+                border: 1px solid beige;
+                padding: 0;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+
+    .cart {
+        border: 1px solid green;
+        padding: 7px;
+
+        .img {
+            background-image: url(indexImg/cartFoto.jpg);
+            background-size: cover;
+            width: 300px;
+            height: 200px;
+        }
+
+        .buy-btn {
+            cursor: pointer;
+        }
+    }
+}

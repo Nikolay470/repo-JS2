@@ -17,10 +17,7 @@
                 <p class="brend"> E-SHOP </p>
             </div>
             <div class="heder-right">
-                <div class="poisk">
-                    <input type="text" class="poisk-input" v-model="value">
-                    <div class="poisk-icon" @click="searchByRequest"></div>
-                </div>
+                <poisk></poisk>
                 <button class="basket" type="button" @click="changeVisibility">Корзина</button>
                 <basket :arr-basket="arrBasket"></basket>
             </div>

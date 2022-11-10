@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>catalog</title>
+    <link rel="stylesheet" href="style/catalog_style.css">
+    <link rel="stylesheet" href="mediazapros/media_catalog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div class="heder center">
+            <div class="heder_left">
+                <a href="index.html" class="heder_nav"><img src="img/logo.svg.svg" alt="logo"></a>
+                <poisk></poisk>
+            </div>
+            <div class="heder_right">
+                <img src="img/menu.svg.svg" alt="menu" class="heder_nav">
+                <a href="reg.html" class="heder_nav reg"><img src="img/reg.svg.svg" alt="reg"></a>
+                <img src="img/corzina.svg.svg" alt="corzina" class="heder_nav basket" @click="basketVisible">
+            </div>
+        </div>
+
+       <basket></basket>
+
+        <div class="heder_menu center hidden">
+            <div class="menu_bar">
+                <div class="menu_bar__btn"></div>
+                <h2>MENU</h2>
+                <nav>
+                    <ul>
+                        <h3>MAN</h3>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <H3>WOOMAN</H3>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <H3>KIDS</H3>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#">Bags</a></li>
+                        <li><a href="#">Denim</a></li>
+                        <li><a href="#">T-Shirts</a></li>
+                        <li><a href="#">Shirts</a></li>
+                        <li><a href="#">Bags</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <div class="top center">
+            <h1 class="h1_top">NEW ARRIVALS </h1>
+            <div class="top_url"> <a href="#" class="top_a"> HOME </a> / <a href="#" class="top_a"> MEN </a>/ <a
+                    href="#" class="top_a"> NEW
+                    ARRIVALS </a></div>
+        </div>
+
+        <div class="main center">
+            <div class="filter">
+                <div class="filter_mobile_menu" v-on:click="menuFilterVisible($event)"></div>
+                <h3 class="filter__h3" v-on:click="menuFilterVisible($event)">FILTER <img src="img_catalog/filter.svg" alt="filter" class="filter__h3__img">
+                </h3>
+            
+                <ul class="filter_spisok not_visible">
+                    <li class="razdel">
+                        <div class="border"></div>
+                        <div class="razdel_category zagolovok" v-on:click="menuFilterVisible($event)"> CATEGORY</div>
+                    </li>
+                    <hr>
+                    <ul class="razdel_list category not_visible">
+                        <li><a href="#/" class="nav"> Accessories </a></li>
+                        <li><a href="#/" class="nav">Bags </a></li>
+                        <li><a href="#/" class="nav">Denim </a></li>
+                        <li><a href="#/" class="nav">Hoodies & Sweatshirts </a></li>
+                        <li><a href="#/" class="nav">Jackets & Coatsv </a></li>
+                        <li><a href="#/" class="nav">Polos </a></li>
+                        <li><a href="#/" class="nav">Shirts </a></li>
+                        <li><a href="#/" class="nav">Shoes </a></li>
+                        <li><a href="#/" class="nav">Sweaters & Knits </a></li>
+                        <li><a href="#/" class="nav">T-Shirts </a></li>
+                        <li><a href="#/" class="nav">Tanks </a></li>
+                    </ul>
+                    <li class="razdel">
+                        <div class="border"></div>
+                        <div class="razdel_brand zagolovok" v-on:click="menuFilterVisible($event)"> BRAND </div>
+                    </li>
+                    <hr>
+                    <ul class="razdel_list brand not_visible">
+                        <li><a href="#/" class="nav"> Accessories </a></li>
+                        <li><a href="#/" class="nav">Bags </a></li>
+                        <li><a href="#/" class="nav">Denim </a></li>
+                        <li><a href="#/" class="nav">Hoodies & Sweatshirts </a></li>
+                        <li><a href="#/" class="nav">Jackets & Coatsv </a></li>
+                        <li><a href="#/" class="nav">Polos </a></li>
+                    </ul>
+                    <li class="razdel">
+                        <div class="border"></div>
+                        <div class="razdel_designer zagolovok" v-on:click="menuFilterVisible($event)"> DESIGNER </div>
+                    </li>
+                    <hr>
+                    <ul class="razdel_list designer not_visible">
+                        <li><a href="#/" class="nav"> Accessories </a></li>
+                        <li><a href="#/" class="nav">Bags </a></li>
+                        <li><a href="#/" class="nav">Denim </a></li>
+                        <li><a href="#/" class="nav">Hoodies & Sweatshirts </a></li>
+                        <li><a href="#/" class="nav">Jackets & Coatsv </a></li>
+                        <li><a href="#/" class="nav">Polos </a></li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="menu">
+                <div class="now_size_price">
+                    <h3 class="menu__now" id="menu_h3">TRENDING NOW <img src="img_catalog/menu_strelka.png" alt=""
+                            class="now_size_price__strelka"></h3>
+                    <h3 class="menu__size" id="menu_h3" v-on:click="menuSizeVisible">SIZE <img src="img_catalog/menu_strelka.png" alt=""
+                            class="now_size_price__strelka"></h3>
+                    <h3 class="menu__price" id="menu_h3">PRICE <img src="img_catalog/menu_strelka.png" alt=""
+                            class="now_size_price__strelka"></h3>
+                    <div class="size_menu_block not_visible">
+                        <ul class="size_block">
+                            <li class="menu_list"><input type="checkbox" name="check" class="checkbox">XS</li>
+                            <li class="menu_list"><input type="checkbox" name="check" class="checkbox">S</li>
+                            <li class="menu_list"><input type="checkbox" name="check" class="checkbox">M</li>
+                            <li class="menu_list"><input type="checkbox" name="check" class="checkbox">L</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <goods></goods>
+
+        <div class="number center">
+            <div class="navigation">
+                <a href="#" class="btn"><img src="img_catalog/btn_left.png" alt="cnopka_left"></a>
+                <div><a href="#" class="num">1</a></div>
+                <div><a href="#" class="num">2</a></div>
+                <div><a href="#" class="num">3</a></div>
+                <div><a href="#" class="num">4</a></div>
+                <div><a href="#" class="num">5</a></div>
+                <div><a href="#" class="num">6</a></div>
+                <div>....</div>
+                <div><a href="#" class="num">20</a></div>
+                <a href="#" class="btn"><img src="img_catalog/btn_right.png" alt="cnopka_right"></a>
+            </div>
+        </div>
+        <div class="footer center">
+            <div class="footer_top">
+                <div class="footer_premium">
+                    <img src="img/footer_top1.svg" alt="dostavca" class="footer_img">
+                    <h2 class="h2_footer_top">Free Delivery</h2>
+                    <p class="p_footer_top">Worldwide delivery on all.
+                        Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="footer_premium">
+                    <img src="img/footer_top2.png" alt="skidca" class="footer_img">
+                    <h2 class="h2_footer_top">Sales & discounts</h2>
+                    <p class="p_footer_top">Worldwide delivery on all.
+                        Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="footer_premium">
+                    <img src="img/footer_top3.png" alt="premium" class="footer_img">
+                    <h2 class="h2_footer_top">Quality assurance</h2>
+                    <p class="p_footer_top">Worldwide delivery on all.
+                        Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer_fon">
+            <div class="footer_middle center">
+                <div class="footer_madam">
+                    <img src="img/madam_footer.png" alt="madam" class="footer_middle_img">
+                    <p class="text_footer_middle">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+                        purus
+                        condimentum“</p>
+                </div>
+                <form action="" class="form_footer">
+                    <h2 class="h2_footer_middle">SUBSCRIBE</h2>
+                    <h3 class="h3_footer_middle">FOR OUR NEWLETTER AND PROMOTION</h3>
+                    <div class="footer_input">
+                        <input type="email" class="footer_pochta">
+                        <button class="footer_cnop">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="footer_bottom_fon">
+            <div class="footer_bottom center">
+                <div class="prava">
+                    © 2021 Brand All Rights Reserved.
+                </div>
+                <div class="spisok_url">
+                    <a href="" class="url_a"><img src="img/facebook.svg" alt="facebook"></a>
+                    <a href="" class="url_a"><img src="img/instagram.png" alt="instagram"></a>
+                    <a href="" class="url_a"><img src="img/pinterest.png" alt="pinterest"></a>
+                    <a href="" class="url_a"><img src="img/twitter.png" alt="twitter"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/getCatalog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8"></script>
+    <script src="scripts/compBasket.js"></script>
+    <script src="scripts/compCatalog.js"></script>
+    <script src="scripts/compPoisk.js"></script>
+    <script src="scripts/catalog_scriptVue.js"></script>
+    <script src="scripts/arrayBasket.js"></script>
+
+</body>
+
+</html>

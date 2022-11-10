@@ -1,0 +1,122 @@
+.center {
+  padding-left: calc(50% - 550px);
+  padding-right: calc(50% - 550px);
+}
+
+.hidden {
+  display: none;
+}
+
+header {
+  border: 1px solid black;
+  width: 1100px;
+  height: 60px;
+  background: green;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  justify-content: space-between;
+}
+
+.heder-right {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.heder-right .poisk {
+  display: flex;
+}
+.heder-right .poisk .poisk-input {
+  background: transparent;
+  border: none;
+  border-bottom: 3px solid yellow;
+  color: white;
+}
+.heder-right .poisk .poisk-input:focus {
+  outline: none;
+}
+.heder-right .poisk .poisk-icon {
+  width: 37px;
+  height: 37px;
+  background-image: url(indexImg/poisk_E-SHOP.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+}
+.heder-right .basket {
+  cursor: pointer;
+  padding: 11px;
+}
+.heder-right .basketList {
+  width: 350px;
+  min-height: 100px;
+  border: 1px solid green;
+  background-color: beige;
+  z-index: 1000;
+  position: absolute;
+  top: 63px;
+}
+.heder-right .basketList .basketIsEmpty {
+  margin-left: 113px;
+}
+.heder-right .basketList .goods {
+  border-bottom: 1px solid green;
+  position: relative;
+  padding-left: 15px;
+}
+.heder-right .basketList .goods p {
+  font-size: 18px;
+}
+.heder-right .basketList .goods .total {
+  margin-bottom: 0;
+}
+.heder-right .basketList .goods .btnRemoveProduct {
+  background-image: url(indexImg/btnBasket.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 34px;
+  right: 20px;
+  border: 1px solid beige;
+  padding: 0;
+  cursor: pointer;
+}
+
+.brend {
+  font-size: 20px;
+  font-weight: 600;
+  color: yellow;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.products .cart {
+  border: 1px solid green;
+  padding: 7px;
+}
+.products .cart img {
+  width: 345px;
+}
+.products .cart .buy-btn {
+  cursor: pointer;
+}
+
+.block-text {
+  font-size: 20px;
+  line-height: 35px;
+}
+.block-text .text {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.block-result {
+  font-size: 20px;
+  line-height: 35px;
+}

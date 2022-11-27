@@ -1,0 +1,239 @@
+@media (max-width: 1024px) {
+    body {
+        margin: 0;
+    }
+
+    .center {
+        padding-left: calc(50% - 384px);
+        padding-right: calc(50% - 384px);
+    }
+
+    .heder_left {
+        margin-left: 16px;
+    }
+
+    .heder_right {
+        margin-right: 16px;
+    }
+
+    .h1_top {
+        margin-left: 16px;
+    }
+
+    .top_url {
+        margin-right: 16px;
+    }
+
+
+
+    .main {
+        height: 20px;
+    }
+
+    .filter {
+        margin-left: 35px;
+        margin-right: 293px;
+    }
+
+    .menu {
+        margin-right: 16px;
+    }
+
+    .catalog {
+        justify-content: center;
+        grid-template-columns: repeat(2, 350px);
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .catalog__cartochca {
+        width: 350px;
+    }
+
+    .catalog_img {
+        width: 350px;
+    }
+
+    .footer_top {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    .p_footer_top {
+        text-align: center;
+        width: 360px;
+    }
+
+    .footer_middle {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 140px;
+        padding-top: 54px;
+    }
+
+    .footer_bottom {
+        padding: 0 32px 0 32px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .center {
+        padding-left: calc(50% - 187px);
+        padding-right: calc(50% - 187px);
+    }
+
+    .reg {
+        display: none;
+    }
+
+    .basket {
+        display: none;
+    }
+
+    .heder_menu {
+        width: 100vw;
+        right: 0;
+        padding: 0;
+    }
+
+    .heder_menu .menu_bar {
+        width: 100vw;
+    }
+
+    .heder_menu .menu_bar .menu_bar__btn {
+        display: none;
+    }
+
+    .heder_menu .menu_bar h2 {
+        font-size: 20px;
+    }
+
+    .heder_menu .menu_bar h3 {
+        font-size: 20px;
+    }
+
+    .heder_menu .menu_bar nav ul li a {
+        font-size: 20px;
+    }
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 148px;
+    }
+
+    .h1_top {
+        margin-top: 24px;
+        margin-left: 0;
+    }
+
+    .top_url {
+        margin-bottom: 46px;
+        margin-right: 0;
+    }
+
+    .main {
+        position: relative;
+    }
+
+    .filter .filter_mobile_menu {
+        display: block;
+    }
+
+    .filter__h3 {
+        display: none;
+    }
+
+    .filter .filter_spisok {
+        width: 294px;
+        left: -16px;
+    }
+
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-left: 83px;
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .now_size_price {
+        gap: 20px;
+    }
+
+    .menu__now {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .menu__size {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .menu__price {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .size_menu_block .size_block {
+        top: 25px;
+    }
+
+    .catalog {
+        grid-template-columns: 350px;
+    }
+
+    .catalog__cartochca {
+        margin: 0 8px;
+        width: 335px;
+    }
+
+    .catalog_img {
+        width: 335px;
+    }
+
+    .number {
+        margin-bottom: 64px;
+    }
+
+    .text_footer_middle {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .h3_footer_middle {
+        font-size: 14px;
+        font-weight: 550;
+    }
+
+    .footer_pochta {
+        width: 220px;
+    }
+
+    .footer_bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 143px;
+    }
+
+    .spisok_url {
+        margin-top: 45px;
+        margin-bottom: 43px;
+    }
+
+    .prava {
+        margin-bottom: 10px;
+    }
+
+}
